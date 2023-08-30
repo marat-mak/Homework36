@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "startscreen.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -13,9 +14,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+MainWindow *MainWindow::createClient()
 {
-    ui->pushButton->setText("ok");
+    StartScreen s;
+    s.exec();
+    return nullptr;
 }
 
 void MainWindow::on_messageLineEdit_returnPressed()
@@ -30,7 +33,7 @@ void MainWindow::on_sendMessageButton_clicked()
 }
 
 
-void MainWindow::on_PrivateMessageSendButton_clicked()
+void MainWindow::on_privateMessageSendButton_clicked()
 {
 
 }
@@ -38,7 +41,7 @@ void MainWindow::on_PrivateMessageSendButton_clicked()
 
 void MainWindow::on_actionOpen_another_cliend_triggered()
 {
-
+    createClient();
 }
 
 
