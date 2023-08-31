@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "startscreen.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -39,7 +38,7 @@ void MainWindow::on_privateMessageSendButton_clicked()
 }
 
 
-void MainWindow::on_actionOpen_another_cliend_triggered()
+void MainWindow::on_actionOpen_another_client_triggered()
 {
     createClient();
 }
@@ -49,5 +48,4 @@ void MainWindow::on_actionCloseClient_triggered()
 {
 
 }
-
 
