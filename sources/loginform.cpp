@@ -13,18 +13,26 @@ LoginForm::~LoginForm()
     delete ui;
 }
 
+void LoginForm::on_pushButton_clicked()
+{
+
+}
+
+
 void LoginForm::on_buttonBox_accepted()
 {
 
 }
+
 
 void LoginForm::on_buttonBox_rejected()
 {
 
 }
 
+
 void LoginForm::on_registrationPushButton_clicked()
 {
-    emit registerRequested();
+
 }
 
