@@ -25,3 +25,8 @@ void StartScreen::setRegistrationForm()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
+
+void StartScreen::onLoggedIN(uint userId, QString userName)
+{
+
+}
