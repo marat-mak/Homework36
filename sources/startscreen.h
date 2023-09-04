@@ -14,6 +14,8 @@ class StartScreen : public QDialog
 public:
     explicit StartScreen(QWidget *parent = nullptr);
     ~StartScreen();
+    void setLoginForm();
+    void setRegistrationForm();
 
 private:
     Ui::StartScreen *ui;

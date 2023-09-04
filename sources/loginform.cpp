@@ -33,6 +33,6 @@ void LoginForm::on_buttonBox_rejected()
 
 void LoginForm::on_registrationPushButton_clicked()
 {
-
+    emit registerRequested();
 }
 
